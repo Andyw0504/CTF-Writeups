@@ -11,8 +11,17 @@ CTF-Writeups/
 ├── Reverse/  # 逆向工程：静态/动态分析、脱壳、算法还原 ...
 ├── Crypto/   # 密码学：RSA、AES、格密码、古典密码 ...
 ├── Misc/     # 杂项：隐写、取证、OSINT、PPC ...
+├── scripts/  # 解题脚本库（pwn/crypto/misc）
 └── assets/   # 题解截图等资源
 ```
+
+## 🧪 解题脚本库
+
+| 脚本 | 用途 |
+|---|---|
+| [scripts/pwn/ret2libc_template.py](scripts/pwn/ret2libc_template.py) | ret2libc 通用模板（泄漏→算基址→二次返回） |
+| [scripts/crypto/rsa_attack.py](scripts/crypto/rsa_attack.py) | RSA 攻击集：共模 / 低指数 / factordb / Wiener |
+| [scripts/misc/stego_check.sh](scripts/misc/stego_check.sh) | 图片隐写一键排查 |
 
 ## 🏆 赛事 & 靶场
 
@@ -36,19 +45,22 @@ CTF-Writeups/
 <!-- 新题解写完后，在对应分类下添加链接 -->
 
 ### Web
-*（待更新）*
+- [学习笔记 · SQL 注入：万能密码到文件写入](Web/example-sqli-to-outfile.md) — `SQLi` `INTO OUTFILE`
+- [学习笔记 · SSRF 打内网 Redis](Web/example-ssrf-to-redis.md) — `SSRF` `gopher` `Redis 未授权`
+- [学习笔记 · 文件上传绕过姿势汇总](Web/example-upload-bypass.md) — `文件上传` `绕过清单`
+- [学习笔记 · XSS 与 CSP 绕过](Web/example-xss-csp-bypass.md) — `XSS` `CSP`
 
 ### Pwn
-*（待更新）*
+- [学习笔记 · ret2libc 入门](Pwn/example-ret2libc.md) — `栈溢出` `ret2libc`
 
 ### Reverse
-*（待更新）*
+- [学习笔记 · 无壳 ELF 简单逆向（XOR 校验）](Reverse/example-xor-crackme.md) — `IDA` `算法还原`
 
 ### Crypto
-*（待更新）*
+- [学习笔记 · RSA 共模攻击](Crypto/example-rsa-common-modulus.md) — `RSA` `扩展欧几里得`
 
 ### Misc
-*（待更新）*
+- [学习笔记 · PNG 隐写排查套路](Misc/example-png-stego.md) — `隐写` `LSB`
 
 ---
 
